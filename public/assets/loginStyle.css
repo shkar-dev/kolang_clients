@@ -1,0 +1,57 @@
+/*.login-container {*/
+/*    width: 100%;*/
+/*    height: 100vh;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*}*/
+/*.login-form {*/
+/*    height:65%;*/
+/*    width: 45%;*/
+/*    background:white !important;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+
+/*}*/
+
+/*.login-form >  div {*/
+/*    width: 60%;*/
+/*    padding: 3px 0px;*/
+/*    margin: 5px 0 ;*/
+/*}*/
+/*.login-form > .row {*/
+/*    justify-content: center;*/
+/*    padding: 25px 0px ;*/
+/*    !*border-bottom: 1px solid #c0c0c0;*!*/
+/*}*/
+/*.login-logo {*/
+/*    width: 85px;*/
+/*    height: 90px;*/
+
+/*}*/
+/*.login-form >  div >input{*/
+/*    width: 100%;*/
+/*    height: 40px;*/
+/*    outline: none;*/
+/*    border: 1px solid #c0c0c0;*/
+/*    border-radius: 3px;*/
+/*    color: #303030;*/
+/*    padding: 3px 15px;*/
+
+/*}*/
+/*.login-form >  div >button{*/
+/*    width: 100%;*/
+/*    height: 40px;*/
+/*    text-align: center;*/
+/*    outline: none;*/
+/*    border: none;*/
+/*    background: #448B8B;*/
+/*    color: white;*/
+/*}*/
+
+
+
+
+

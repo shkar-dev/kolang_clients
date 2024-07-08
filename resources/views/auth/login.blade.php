@@ -70,22 +70,54 @@
 {{--        </div>--}}
 {{--    </div>--}}
 {{--</div>--}}
+{{--    <div class="background-section"></div>--}}
+{{--    <div class="login-container">--}}
+{{--        <div class="login-form">--}}
+{{--            <div class="row">--}}
+{{--                <img src="{{asset('assets/images/logo.png')}}" class="login-logo"  >--}}
+{{--            </div>--}}
+{{--            <div  >--}}
+{{--                <input type="text" class="" placeholder="ناوی بەکارهێنەر"  />--}}
+{{--            </div>--}}
+{{--            <div  >--}}
+{{--                <input type="text" class="" placeholder="وشەی تێپەڕ"  />--}}
+{{--            </div>--}}
+{{--            <div >--}}
+{{--                <button class="register-button"> چوونەژوورەوە</button>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
+<link rel="stylesheet" href="{{asset('assets/registerStyle.css')}}" >
+<div id="page" class="site">
+    <div class="container">
+        <div class="form-box">
+            <div class="progress">
+                <div class="logo"> <img src="{{asset('assets/images/logo.png')}}" /> </div>
+                <ul class="progress-steps">
+                    <li class="step active">
+                        <span>1</span>
+                        <p>چوونەژوورەوە <br> </p>
+                    </li>
 
+                </ul>
+            </div>
+            <form action="">
+                <div class="form-one form-step active">
+                    <div class="bg-svg"></div>
+                    <h2>چوونەژوورەوە</h2>
 
-    <div class="login-container">
-        <div class="login-form">
-            <div class="row">
-                <img src="{{asset('assets/images/logo.png')}}" class="login-logo"  >
-            </div>
-            <div  >
-                <input type="text" class="" placeholder="ناوی بەکارهێنەر"  />
-            </div>
-            <div  >
-                <input type="text" class="" placeholder="وشەی تێپەڕ"  />
-            </div>
-            <div >
-                <button class="register-button"> چوونەژوورەوە</button>
-            </div>
+                    <x-input-email name="email" placeholder="ئیمەیڵ " column="col-md-12" label="ئیمەیڵ" />
+                    <x-input-text name="username" placeholder="ناوی بەکارهێنەر " column="col-md-12" label="ناوی بەکارهێنەر" />
+
+                    <x-input-password name="password" placeholder="وشەی تێپەڕ  " column="col-md-12" label="وشەی تێپەڕ" />
+                    <x-input-password name="password_confirmation" placeholder="دڵنیابوونەوەی وشەی تێپەڕ" column="col-md-12" label="دڵنیابوونەوەی وشەی تێپەڕ" />
+                </div>
+                <div class="btn-group">
+                    <button class="btn-submit" id="submit" type="button"  > <i class="fa fa-paper-plane  " ></i>ناردن</button>
+                </div>
+            </form>
         </div>
     </div>
+</div>
+
 @endsection
