@@ -241,15 +241,15 @@
                 <ul class="progress-steps">
                     <li class="step active">
                         <span>1</span>
-                        <p>زانیاری کەسی <br> </p>
+                        <p>زانیاری کەسی   </p>
                     </li>
                     <li class="step  ">
                         <span>2</span>
-                        <p>پەیوەندی <br>  </p>
+                        <p>پەیوەندی    </p>
                     </li>
                     <li class="step  ">
                         <span>3</span>
-                        <p>ئاسایش <br>  </p>
+                        <p>ئاسایش     </p>
                     </li>
                 </ul>
             </div>
@@ -289,9 +289,9 @@
                     <x-input-password name="password_confirmation" placeholder="دڵنیابوونەوەی وشەی تێپەڕ" column="col-md-12" label="دڵنیابوونەوەی وشەی تێپەڕ" />
                 </div>
                 <div class="btn-group">
-                    <button class="btn-prv" id="prev" type="button" disabled > <i class="fa fa-arrow-right-long  " ></i>گەڕانەوە </button>
-                    <button class="btn-next"  id="next" type="button" >  <i class="fa fa-arrow-left-long  " ></i>دواتر  </button>
-                    <button class="btn-submit" id="submit" type="button"  > <i class="fa fa-paper-plane  " ></i>ناردن</button>
+                    <button class="btn-custom btn-prv" id="prev" type="button" disabled > <i class="fa fa-arrow-right-long  " ></i>گەڕانەوە </button>
+                    <button class="btn-custom btn-next"  id="next" type="button" >  <i class="fa fa-arrow-left-long  " ></i>دواتر  </button>
+                    <button class="btn-custom btn-submit" id="submit" type="button"  > <i class="fa fa-paper-plane  " ></i>ناردن</button>
                 </div>
             </form>
         </div>

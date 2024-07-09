@@ -86,9 +86,9 @@
     </div>
 </nav>
 
- <div class="home-sidebar-container   "  >
-    <i class="fa fa-menu" id="menu"></i>
-    <div class="left sidebar" id="mySidebar"  >
+<div class="home-sidebar-container   "  >
+{{--    <i class="fa fa-menu" id="menu"></i>--}}
+    <div class="left sidebar row" id="mySidebar"  >
         <div>
             <button class="toggle-sidebar px-5" >
                 <i class="fa fa-bars "></i> <label class="mx-2">لابردنی لیست</label>
@@ -125,9 +125,9 @@
 
         </div>
     </div>
-    <div class="right" id="right">
+    <div class="right row" id="right">
         <div class="lecture-content">
-
+            <p>aakjnakjkn</p>
         </div>
     </div>
 <script>

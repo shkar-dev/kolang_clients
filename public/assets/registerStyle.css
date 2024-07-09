@@ -141,8 +141,7 @@ img {
     border-radius: 30px 30px 15px 15px;
 }
 form > div {
-    width: 400px;
-    margin : 0 auto;
+     margin : 0 auto;
 }
 form > div > p  {
     color : var(--lighter-color);
@@ -289,5 +288,41 @@ form > div.active {
     }
     .progress ul.progress-steps li p span {
         display: block;
+    }
+
+
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .container {
+        padding:0 1em !important;
+    }
+    .form-box {
+        border:none;
+    }
+    body {
+        overflow:unset;
+    }
+    .step {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center !important;
+        height: fit-content;
+        margin:0 !important
+    }
+    .step >  span {
+        margin: 10px  0px !important;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .btn-custom {
+        padding: 0.3em 1.2em !important;
+        font-size:14px !important;
+    }
+    .step {
+        width: 100%;
     }
 }
