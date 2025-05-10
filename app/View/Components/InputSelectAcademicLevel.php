@@ -6,7 +6,7 @@ use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class InputSelect extends Component
+class InputSelectAcademicLevel extends Component
 {
     /**
      * Create a new component instance.
@@ -30,6 +30,6 @@ class InputSelect extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.input-select');
+        return view('components.input-select-academic-level');
     }
 }
