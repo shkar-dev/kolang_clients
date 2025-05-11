@@ -40,11 +40,10 @@ class RegisterController extends Controller
     public function create(Request $request)
     {
 
+
         if ($request->day != null && $request->month  != null && $request->year != null) {
             $request->request->add(['date_of_birth' => $request->year . '/' . $request->month . '/' . $request->day]);
         }
-
-
         $validated = $request->validate([
             'name' => 'required|string|max:255',
             "account_type" => 'required',
@@ -57,6 +56,7 @@ class RegisterController extends Controller
             "password" => 'required|string|max:255',
             "password_confirmation" => 'required|string|max:255',
         ]);
+
 
         //chakkrdni form aka
         $response = Http::withHeaders([
@@ -106,6 +106,12 @@ class RegisterController extends Controller
             Http::withToken($token)->post('http://localhost:8080/api/v1/member/logout');
             session()->forget('api_token');
         }
-        return redirect()->route('login')->with('success', 'Logged out successfully');
+        // return redirect()->route('login')->with('success', 'Logged out successfully');
+        //      $token = session('api_token');
+        //     $response = Http::withToken($token)->post('http://localhost:8080/api/v1/member/logout');
+        //     session()->forget('api_token');
+        //     $data  = $response->json();
+        //     return redirect()->route('login')->with('success', 'Logged out successfully');
+        //     // return redirect(route('login'))->with('message',$data);
     }
 }

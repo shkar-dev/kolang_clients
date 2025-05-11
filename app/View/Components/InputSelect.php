@@ -15,12 +15,14 @@ class InputSelect extends Component
     public $name;
     public $label;
     public $placeholder;
-    public function __construct($column, $name, $label, $placeholder)
+    public $options = [];
+    public function __construct($column, $name, $label, $placeholder, $options = [])
     {
         $this->column = $column;
         $this->name = $name;
         $this->label = $label;
         $this->placeholder = $placeholder;
+        $this->options =  $options;
     }
 
     /**

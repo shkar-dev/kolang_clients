@@ -1,0 +1,129 @@
+@font-face {
+    font-family: peshang;
+    src: url('/../assets/fonts/peshang.ttf');
+}
+
+@font-face {
+    font-family: k24;
+    src: url('/../assets/fonts/K24.ttf');
+}
+
+@font-face {
+    font-family: Rubik;
+    src: url('/../assets/fonts/Rubki.ttf');
+}
+
+@font-face {
+    font-family: Speda;
+    src: url('/../assets/fonts/Speda.ttf');
+}
+
+
+:root {
+    --main-color: #42656d;
+    --secondary-color: #9edbd0;
+    --lighter-color: #f0f0f0;
+    --light-color:#b0b0c0;
+    --dark-color:#52505e;
+
+    --font-smaller:14px;
+    --font-bigger: 20px;
+
+    --main-font : Speda;
+    --secondary-font : k24;
+
+}
+ 
+ 
+ 
+  
+h1,h2,h3 {
+    font-weight: 700;
+    line-height: 1.25;
+    margin: 0 0 0.5em;
+    font-family:var(--main-font) ;
+}
+p{
+    font-family: var(--secondary-font);
+}
+label {
+    font-family: var(--main-font);
+}
+input{
+    font-family: var(--main-font);
+    transition: 0.3s ease !important;
+    /* outline: none !important; */
+}
+button {
+    font-family: peshang;
+    background-color: #036474;
+    color: white;
+    padding: 0.5em 1.8em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition:  .3s ease;
+    border:none;
+    font-weight: bold;
+    font-size: 16px;
+}
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2em;
+
+}
+ 
+form > div {
+     margin : 0 auto;
+}
+form > div > p  {
+    color : var(--lighter-color);
+    margin-bottom: 2em;
+
+}
+form > div >div:not(.checkbox) {
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+}
+form :where(input,select) {
+    height: 40px;
+    padding: 0 1em;
+    border-radius: 7px;
+    /* outline-color:var(--secondary-color) ; */
+    border: 1px solid var(--lighter-color);
+    background: transparent;
+}
+form label {
+    font-size: var(--font-smaller);
+    margin-bottom: 0.5em;
+    font-weight: 600;
+}
+.verification_code_container {
+    display: none;
+    transition: 0.5s ease;
+}
+.btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin-top: 2em;
+}
+.btn-group [class*='btn-'] {
+    background-color: #036474;
+    color: white;
+    padding: 0.5em 1.8em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition:  .3s ease;
+    border:none;
+    font-weight: bold;
+    font-size: 16px;
+}
+.btn-custom  > i {
+     margin: 8px 0px 0px 6px !important;
+}
+::placeholder {
+    color: var(--light-color);
+}
+ 
