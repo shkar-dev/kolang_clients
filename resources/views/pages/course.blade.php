@@ -5,9 +5,8 @@
         <div class="verification-form">
             <h3 id="test"></h3>
             <script src="https://cdn.jsdelivr.net/npm/@mux/mux-player"></script>
-            <mux-player playback-id="ADSvz2X501hWGufmTHJ6VmiMduDu2C00cd02JOlR6jiHpE"
+            <mux-player playback-id="dC74F6d4a3elwvqE2zMy6zkUYpj5D3VOQeYQ7BEGhPE"
                 metadata-viewer-user-id="Placeholder (optional)"></mux-player>
         </div>
     </div>
-
 @endsection

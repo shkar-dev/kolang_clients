@@ -18,6 +18,19 @@ Route::post('user_logout', [RegisterController::class, 'logout'])->name('user-re
 Route::middleware([\App\Http\Middleware\AuthenticateWithToken::class,UserInfo::class])->group(function () {
     
     Route::get('/courses',function(){
+
+$token = session('api_token');
+        $response = Http::withHeaders([
+            'Accept' => 'application/json',
+            'Authorization' => 'Bearer '. $token,
+        ])->get('http://localhost:8080/api/v1/member/fetchGroup', );
+
+        if($response->status() == 200){
+            $data = $response->json();
+           
+        }
+
+
         return view('pages.course');
     });
     Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

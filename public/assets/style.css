@@ -370,6 +370,45 @@ masafai pewist bmenetawa */
  .client_sidebar_item:hover{
     background: #9bb2bb;
  }
+
+
+
+
+ /* subitem */
+ .toggle-items { 
+     width: 100%;
+      display: none;
+ }
+.client_sidebar_subitem {
+    width: 100%;
+    font-family: var(--primary-font);
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    transition: 0.3s ease;
+    border-bottom: 1px solid #9bb2bb;
+    background:#cae0e9 ;
+   
+ }
+.client_sidebar_subitem:hover{
+    background: #6a8d9b;
+ }
+ .client_sidebar_subitem i {
+    width:25%;
+    text-align: center;
+    transition: 0.3s ease;
+ }
+ .client_sidebar_subitem:hover  i{
+    color: #ffffff;
+ }
+ .client_sidebar_subitem:hover  {
+    color: #ffffff;
+ }
+ .client_sidebar_subitem span {
+    width: 75%;
+ }
 .content_container {
     width: 80%;
     display: flex;
