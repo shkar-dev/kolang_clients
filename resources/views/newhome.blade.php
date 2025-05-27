@@ -66,17 +66,20 @@
                     <i class="fa  fa-clapperboard mx-2"></i>
                     <span>گروپەکان</span>
                 </div>
-                <div class="toggle-items">
-                    <div class="client_sidebar_subitem">
-                        <i class="fa  fa-users-rectangle mx-2"></i>
-                        <span>گروپ ١ </span>
-                    </div>
-                    <div class="client_sidebar_subitem">
-                        <i class="fa  fa-users-rectangle mx-2"></i>
-                        <span>گروپ ١ </span>
-                    </div>
-                </div>
 
+
+
+                @if (!empty($groups))
+                    <div class="toggle-items">
+                        @foreach ($groups as $group)
+                            <div class="client_sidebar_subitem">
+                                <i class="fa  fa-users-rectangle mx-2"></i>
+                                <span>{{ $group['name'] }} </span>
+                            </div>
+
+                        @endforeach
+                    </div>
+                @endif
 
                 <div class="client_sidebar_item">
                     <i class="fas fa-file-invoice mx-2"></i>

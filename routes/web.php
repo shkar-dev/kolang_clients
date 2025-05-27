@@ -19,22 +19,22 @@ Route::middleware([\App\Http\Middleware\AuthenticateWithToken::class,UserInfo::c
     
     Route::get('/courses',function(){
 
-$token = session('api_token');
-        $response = Http::withHeaders([
-            'Accept' => 'application/json',
-            'Authorization' => 'Bearer '. $token,
-        ])->get('http://localhost:8080/api/v1/member/fetchGroup', );
-
-        if($response->status() == 200){
-            $data = $response->json();
-           
-        }
-
-
+        // $token = session('api_token');
+        // $response = Http::withHeaders([
+        //     'Accept' => 'application/json',
+        //     'Authorization' => 'Bearer '. $token,
+        // ])->get('http://localhost:8080/api/v1/member/fetchGroup/',[
+        //     'id'=>26
+        // ] );
+        // $data = '';
+        // if($response->status() == 200){
+        //     $data = $response->json();
+        // }
         return view('pages.course');
     });
     Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
     Route::get('newhome', function () {
+
         return view('newhome');
     })->name('newhome');
     Route::get('/verification',function(){

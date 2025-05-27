@@ -21,11 +21,15 @@ class UserInfo
             'Accept' => 'application/json',
             'Authorization' => 'Bearer '. $token,
         ])->post(url: 'http://localhost:8080/api/v1/member/getUserInfo');
+
+            
+        
         // $data = $response->json();
         // dd($data['user'][0]['verify']);
         if ($response->status() == 200) {
             view()->share('authUser', $response->json());    
         }
+        
         return $next($request);
     }
 }
