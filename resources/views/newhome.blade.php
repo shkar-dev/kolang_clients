@@ -60,23 +60,17 @@
                     <span>سەرەکی</span>
                 </div>
 
-
-
                 <div class="client_sidebar_item  toggle-btn">
                     <i class="fa  fa-clapperboard mx-2"></i>
                     <span>گروپەکان</span>
                 </div>
-
-
-
                 @if (!empty($groups))
                     <div class="toggle-items">
                         @foreach ($groups as $group)
-                            <div class="client_sidebar_subitem">
+                            <div class="client_sidebar_subitem px-4">
                                 <i class="fa  fa-users-rectangle mx-2"></i>
-                                <span>{{ $group['name'] }} </span>
+                                <a href="{{ route('study', ['id' => $group['id']]) }}">{{ $group['name'] }} </a>
                             </div>
-
                         @endforeach
                     </div>
                 @endif

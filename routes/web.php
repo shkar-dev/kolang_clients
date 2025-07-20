@@ -37,6 +37,20 @@ Route::middleware([\App\Http\Middleware\AuthenticateWithToken::class,UserInfo::c
 
         return view('newhome');
     })->name('newhome');
+
+    Route::get('/study/{id}',function($id){
+        $token = session('api_token');
+        $response = Http::withHeaders([
+            'Accept' => 'application/json',
+            'Authorization' => 'Bearer '. $token,
+        ])->get("http://localhost:8080/api/v1/member/fetchLessonStructure/$id"  );
+        
+           if($response->status() == 200){
+            $data = $response->json();
+             return view('pages.study',compact('data') ); 
+        }
+        return false; 
+    })->name('study');
     Route::get('/verification',function(){
         return view('pages.verification');
     })->name('verification');

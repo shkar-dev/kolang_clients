@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="{{asset('assets/style.css')}}" />
 </head>
 
-<body>
+<body oncontextmenu="return false;">
     <div id="app">
         @yield('content')
     </div>
@@ -22,6 +22,10 @@
         integrity="sha512-JobWAqYk5CSjWuVV3mxgS+MmccJqkrBaDhk8SKS1BW+71dJ9gzascwzW85UwGhxiSyR7Pxhu50k+Nl3+o5I49A=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="{{asset('assets/script/progress_form.js')}}"></script>
+
+    <script>
+        document.addEventListener('contextmenu', event => event.preventDefault());
+    </script>
 </body>
 
 </html>
